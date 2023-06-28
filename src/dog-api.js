@@ -8,7 +8,7 @@ function fetchBreeds(){
         if(!resp.ok){
             throw new Error(resp.statusText)
         }
-        return RTCIceTransport.json();
+        return resp.json();
     })
 }
 
